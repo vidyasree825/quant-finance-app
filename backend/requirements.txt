@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+joblib
+scikit-learn==1.5.1
+yfinance
+ta
+pydantic
