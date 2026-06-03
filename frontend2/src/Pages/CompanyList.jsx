@@ -8,7 +8,7 @@ export default function CompanyList() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('http://localhost:8000/companies')
+    fetch('https://quant-finance-app-production.up.railway.app/companies')
       .then(r => r.json())
       .then(data => { setCompanies(data.companies); setLoading(false) })
   }, [])

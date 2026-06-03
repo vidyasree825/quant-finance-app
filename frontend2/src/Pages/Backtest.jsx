@@ -10,7 +10,7 @@ export default function Backtest() {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    fetch(`http://localhost:8000/backtest/${ticker}`)
+    fetch(`https://quant-finance-app-production.up.railway.app/backtest/${ticker}`)
       .then(r => r.json())
       .then(data => { setResult(data); setLoading(false) })
       .catch(() => { setError('Failed to load backtest'); setLoading(false) })
